@@ -18,6 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".bravery_solution_page" />
+        <activity android:name=".select_champion"></activity>
     </application>
 
 </manifest>
