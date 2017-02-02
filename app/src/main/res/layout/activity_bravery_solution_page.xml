@@ -1,13 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_bravery_solution_page"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.ogge.bravery.bravery_solution_page">
+    tools:context="com.example.pupil.bravery.BraverySolutionPage"
+    android:background="#714700">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Try"
+        android:id="@+id/btn_NextTry"
+        android:onClick="NextTry"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/txt_Champion" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Champion"
+        android:id="@+id/txt_Champion"
+        android:layout_below="@+id/img_Champion"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/img_Champion"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Masteries"
+        android:id="@+id/txt_Mastery"
+        android:layout_alignBaseline="@+id/txt_Spell1"
+        android:layout_alignBottom="@+id/txt_Spell1"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:id="@+id/img_Mastery"
+        android:layout_alignBottom="@+id/txt_Mastery"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Spells1"
+        android:id="@+id/txt_Spell1"
+        android:layout_below="@+id/img_Spell1"
+        android:layout_toStartOf="@+id/txt_Spell2" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Spells2"
+        android:id="@+id/txt_Spell2"
+        android:layout_below="@+id/img_Spell2"
+        android:layout_alignEnd="@+id/img_Lane" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/img_Spell1"
+        android:layout_alignTop="@+id/img_Spell2"
+        android:layout_toStartOf="@+id/img_Spell2" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/img_Spell2"
+        android:layout_below="@+id/txt_Lane"
+        android:layout_toEndOf="@+id/img_Item3"
+        android:layout_marginTop="63dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Lane"
+        android:id="@+id/txt_Lane"
+        android:layout_below="@+id/img_Lane"
+        android:layout_alignEnd="@+id/img_Spell2" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/img_Lane"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_Item"
+        android:layout_above="@+id/img_Item4"
+        android:layout_toStartOf="@+id/img_Item1" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/img_Item1"
+        android:layout_above="@+id/txt_Item"
+        android:layout_alignEnd="@+id/txt_Mastery" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/img_Item2"
+        android:layout_alignTop="@+id/img_Item1"
+        android:layout_toEndOf="@+id/img_Item1" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/img_Item3"
+        android:layout_alignTop="@+id/img_Item2"
+        android:layout_toEndOf="@+id/img_Item2" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/img_Item4"
+        android:layout_above="@+id/btn_NextTry"
+        android:layout_toEndOf="@+id/txt_Item" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/img_Item5"
+        android:layout_alignTop="@+id/img_Item6"
+        android:layout_toEndOf="@+id/img_Item4" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/img_Item6"
+        android:layout_alignTop="@+id/img_Item4"
+        android:layout_toEndOf="@+id/img_Item5" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Ability"
+        android:id="@+id/txt_Ability"
+        android:layout_above="@+id/img_Spell2"
+        android:layout_toStartOf="@+id/img_Lane" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/img_Ability"
+        android:layout_alignBottom="@+id/img_Lane"
+        android:layout_toEndOf="@+id/img_Mastery" />
 
 </RelativeLayout>
